@@ -6,18 +6,17 @@
     </div>
 
     <div class="p-field">
-      <label for="cpf">CPF</label>
-      <p-inputMask id="cpf" mask="999.999.999-99" formControlName="cpf"></p-inputMask>
+      <label for="descricao">Descrição</label>
+      <input id="descricao" type="text" pInputText formControlName="descricao" />
     </div>
 
-    <div class="p-field">
-      <label for="email">E-mail</label>
-      <input id="email" type="email" pInputText formControlName="email" />
-    </div>
-
-    <div class="p-field">
-      <label for="telefone">Telefone</label>
-      <p-inputMask id="telefone" mask="(99) 99999-9999" formControlName="telefone"></p-inputMask>
+    <div class="p-field-checkbox">
+      <p-checkbox
+        inputId="isSaldoNegativo"
+        binary="true"
+        formControlName="isSaldoNegativo"
+      ></p-checkbox>
+      <label for="isSaldoNegativo">Saldo Negativo</label>
     </div>
 
     <div class="p-field">
