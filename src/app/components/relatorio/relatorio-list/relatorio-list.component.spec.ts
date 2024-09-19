@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MetaComponent } from './meta.component';
+import { RelatorioListComponent } from './relatorio-list.component';
 
-describe('MetaComponent', () => {
-  let component: MetaComponent;
-  let fixture: ComponentFixture<MetaComponent>;
+describe('RelatorioListComponent', () => {
+  let component: RelatorioListComponent;
+  let fixture: ComponentFixture<RelatorioListComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [MetaComponent]
+      imports: [RelatorioListComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(MetaComponent);
+    fixture = TestBed.createComponent(RelatorioListComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { RelatorioComponent } from './relatorio.component';
+import { LancamentoFormComponent } from './lancamento-form.component';
 
-describe('RelatorioComponent', () => {
-  let component: RelatorioComponent;
-  let fixture: ComponentFixture<RelatorioComponent>;
+describe('LancamentoFormComponent', () => {
+  let component: LancamentoFormComponent;
+  let fixture: ComponentFixture<LancamentoFormComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [RelatorioComponent]
+      imports: [LancamentoFormComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(RelatorioComponent);
+    fixture = TestBed.createComponent(LancamentoFormComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
