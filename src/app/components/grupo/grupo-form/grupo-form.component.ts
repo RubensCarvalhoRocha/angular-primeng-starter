@@ -24,6 +24,7 @@ import { GrupoService } from '../../../services/grupo.service';
   ],
   templateUrl: './grupo-form.component.html',
   styleUrl: './grupo-form.component.css',
+  providers: [MessageService],
 })
 export class GrupoFormComponent implements OnInit {
   grupoForm: FormGroup;
