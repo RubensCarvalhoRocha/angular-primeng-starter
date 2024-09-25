@@ -11,6 +11,6 @@ export class GrupoService {
   constructor(private http: HttpClient) {}
 
   createGrupo(grupo: any): Observable<any> {
-    return this.http.post<any>(`${environment.api}/criar`, grupo);
+    return this.http.post<any>(`${environment.api}/grupos/criar`, grupo);
   }
 }

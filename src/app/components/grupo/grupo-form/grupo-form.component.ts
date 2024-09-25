@@ -11,6 +11,7 @@ import { InputMaskModule } from 'primeng/inputmask';
 import { ToastModule } from 'primeng/toast';
 import { InputTextModule } from 'primeng/inputtext';
 import { GrupoService } from '../../../services/grupo.service';
+import { CheckboxModule } from 'primeng/checkbox';
 
 @Component({
   selector: 'app-grupo-form',
@@ -21,6 +22,7 @@ import { GrupoService } from '../../../services/grupo.service';
     InputMaskModule,
     ReactiveFormsModule,
     ToastModule,
+    CheckboxModule,
   ],
   templateUrl: './grupo-form.component.html',
   styleUrl: './grupo-form.component.css',
