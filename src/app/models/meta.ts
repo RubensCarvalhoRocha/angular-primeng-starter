@@ -1,6 +1,6 @@
-import { Categoria } from './categoria';
+import { Categoria } from './enun/categoria';
 import { Grupo } from './grupo';
-import { Tipo } from './tipo';
+import { Tipo } from './enun/tipo';
 export interface Meta {
   id?: number;
   tipo: Tipo;
