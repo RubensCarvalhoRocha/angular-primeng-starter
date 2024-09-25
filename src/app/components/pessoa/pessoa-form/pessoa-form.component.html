@@ -1,1 +1,27 @@
-<p>pessoa-form works!</p>
+<form [formGroup]="pessoaForm" (ngSubmit)="onSubmit()">
+  <div class="p-fluid">
+    <div class="p-field">
+      <label for="nome">Nome</label>
+      <input id="nome" type="text" pInputText formControlName="nome" />
+    </div>
+
+    <div class="p-field">
+      <label for="cpf">CPF</label>
+      <input id="cpf" type="text" pInputText formControlName="cpf" mask="999.999.999-99" />
+    </div>
+
+    <div class="p-field">
+      <label for="email">Email</label>
+      <input id="email" type="email" pInputText formControlName="email" />
+    </div>
+
+    <div class="p-field">
+      <label for="telefone">Telefone</label>
+      <input id="telefone" type="text" pInputText formControlName="telefone" mask="(99) 99999-9999" />
+    </div>
+
+    <div class="p-field">
+      <p-button type="submit" label="Salvar" [disabled]="pessoaForm.invalid"></p-button>
+    </div>
+  </div>
+</form>
