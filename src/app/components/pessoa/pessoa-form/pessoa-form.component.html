@@ -21,7 +21,7 @@
     </div>
 
     <div class="p-field">
-      <p-button type="submit" label="Salvar" [disabled]="pessoaForm.invalid"></p-button>
+      <p-button (onClick)="onSubmit()" label="Salvar" [disabled]="pessoaForm.invalid"></p-button>
     </div>
   </div>
 </form>

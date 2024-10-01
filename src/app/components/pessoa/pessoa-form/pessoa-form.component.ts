@@ -1,5 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
+import {
+  FormBuilder,
+  FormGroup,
+  Validators,
+  ReactiveFormsModule,
+} from '@angular/forms';
 import { MessageService } from 'primeng/api';
 import { ButtonModule } from 'primeng/button';
 import { InputMaskModule } from 'primeng/inputmask';
@@ -31,7 +36,14 @@ export class PessoaFormComponent implements OnInit {
   ) {
     this.pessoaForm = this.formBuilder.group({
       nome: ['', [Validators.required, Validators.maxLength(100)]],
-      cpf: ['', [Validators.required, Validators.minLength(11), Validators.maxLength(11)]],
+      cpf: [
+        '',
+        [
+          Validators.required,
+          Validators.minLength(11),
+          Validators.maxLength(11),
+        ],
+      ],
       email: ['', [Validators.required, Validators.email]],
       telefone: ['', [Validators.required, Validators.maxLength(15)]],
     });
@@ -40,6 +52,7 @@ export class PessoaFormComponent implements OnInit {
   ngOnInit(): void {}
 
   onSubmit(): void {
+    console.log('salvar', this.pessoaForm.value);
     if (this.pessoaForm.valid) {
       const pessoa = this.pessoaForm.value;
       this.pessoaService.createPessoa(pessoa).subscribe(
