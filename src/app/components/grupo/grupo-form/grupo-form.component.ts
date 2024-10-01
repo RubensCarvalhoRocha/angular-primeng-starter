@@ -23,6 +23,7 @@ import { CheckboxModule } from 'primeng/checkbox';
     ReactiveFormsModule,
     ToastModule,
     CheckboxModule,
+    ToastModule,
   ],
   templateUrl: './grupo-form.component.html',
   styleUrl: './grupo-form.component.css',
@@ -46,6 +47,7 @@ export class GrupoFormComponent implements OnInit {
   ngOnInit(): void {}
 
   onSubmit(): void {
+    console.log(this.grupoForm.value);
     if (this.grupoForm.valid) {
       const grupo = this.grupoForm.value;
       this.grupoService.createGrupo(grupo).subscribe(
