@@ -12,5 +12,5 @@ export const routes: Routes = [
   { path: 'lancamento', component: LancamentoFormComponent },
   { path: 'relatorio', component: RelatorioFormComponent },
   { path: 'grupo', component: GrupoFormComponent },
-  { path: 'Meta', component: MetaFormComponent },
+  { path: 'meta', component: MetaFormComponent },
 ];
